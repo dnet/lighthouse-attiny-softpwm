@@ -1,5 +1,4 @@
 #include <avr/io.h>
-#include <util/delay.h>
 #include <stdint.h>
 
 #define LED_PIN 1
