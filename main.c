@@ -5,7 +5,7 @@
 #define LED_PIN 1
 #define HOLD 16
 
-inline void sw_pwm(uint8_t fill);
+inline static void sw_pwm(uint8_t fill);
 
 int main() {
 	uint8_t level, wait;
@@ -24,7 +24,7 @@ int main() {
 	}
 }
 
-inline void sw_pwm(uint8_t fill) {
+inline static void sw_pwm(uint8_t fill) {
 	uint8_t ctr = 0;
 	for (ctr = 0; ctr < fill; ctr++) {
 		asm("nop");
