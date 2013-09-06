@@ -2,7 +2,7 @@
 #include <stdint.h>
 
 #define LED_PIN 1
-#define HOLD 16
+#define HOLD 6
 
 inline static void sw_pwm(uint8_t fill);
 
